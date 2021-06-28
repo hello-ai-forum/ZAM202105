@@ -1,0 +1,595 @@
+\documentclass[dvipdfmx,autodetect-engine,10pt,b5paper,papersize,openany,dvipsnames]{jsbook}
+
+
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{multicol}
+
+% 本文をゴシックに
+\usepackage[deluxe]{otf}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{amsmath,txfonts}
+\usepackage{bm}
+\usepackage{mathrsfs} % \mathscr
+
+\usepackage[dvipdfmx]{graphicx}
+
+% PDF を読み込み
+\usepackage{pdfpages}
+
+\usepackage{fancyhdr}
+
+\usepackage{tikzpagenodes}
+%\usepackage[object=vectorian]{pgfornament}
+\usetikzlibrary{shapes.geometric,calc}
+
+
+% AddToShipoutPictureBG*
+\usepackage{eso-pic}
+
+
+%\usepackage[dvipdfmx]{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pxjahyper}
+
+
+\usepackage{listings}
+\lstset{
+  title={},
+  caption={},
+  frame={single},
+  numbers=none,
+  lineskip=-0.5ex,
+  basicstyle={\small\ttfamily},
+  identifierstyle={\small},
+  commentstyle={\smallitshape},
+  keywordstyle={\small\bfseries},
+  ndkeywordstyle={\small},
+  stringstyle={\small\ttfamily},
+}
+
+% https://oku.edu.mie-u.ac.jp/~okumura/jsclasses/
+% jsbook の余白が広すぎます
+% 書籍では1行の長さが全角40文字を超えないようにしています。
+% そのため，段組をしないときは，自動的にどちらかの余白が広くなります
+% （美文書シリーズのようなデザインになります）。
+% これが困るときはプリアンブル（\begin{document} の前）に次のように書いてください。
+\setlength{\textwidth}{\fullwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
+
+% for \ruby{}{}
+\usepackage{okumacro}
+
+% 奥付
+\newcommand{\bhline}[1]{\noalign{\hrule height #1}}
+
+\title{
+  \textbf{月刊 ZENKEI AI MAGAZINE\\
+  ２０２１年５月号}
+}
+\author{\textbf{\textsf{ZENKEI AI FORUM}}}
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[C]{\thepage}
+
+\AtBeginDocument{
+  \addtocontents{toc}{\protect\thispagestyle{fancy}}
+}
+
+\begin{document}
+
+%\maketitle
+
+
+%\thispagestyle{fancy}
+%\setcounter{page}{1}
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_2_l.png}
+  }%
+}%
+
+\tableofcontents
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture,overlay]
+\node[yshift=-9em,yscale=1.2,xslant=0.25,color=Gray] (text)
+  at (current page.north){%
+  \sffamily \large
+  【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
+\end{tikzpicture}
+
+\newpage
+
+\thispagestyle{fancy}
+\setcounter{page}{1}
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_2_r.png}
+  }%
+}%
+
+　% 全角空白
+
+\newpage
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_3_l.png}
+  }%
+}%
+
+\chapter*{まえがき}
+\addcontentsline{toc}{chapter}{まえがき}
+\thispagestyle{fancy}
+\begin{tikzpicture}[
+  remember picture, overlay]
+\node[yshift=-8em,yscale=1.2,xslant=0.25,color=Gray] (text)
+  at (current page.north){%
+  \sffamily \large
+  【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
+\end{tikzpicture}
+
+早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
+この２０２１年５月号で５冊目になります。
+
+早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
+この２０２１年５月号で５冊目になります。
+
+早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
+この２０２１年５月号で５冊目になります。
+
+お楽しみください。
+
+\begin{flushright}
+  2021年6月30日\\
+  金沢にて\\
+  ZENKEI AI MAGAZINE 編集長\\
+  市來健吾
+\end{flushright}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \begin{scope}[thick,rounded corners=8pt,
+      line width=16pt,
+      xscale=1.3, yscale=1.3, xshift=-1.75cm, yshift=-5.0cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) [sharp corners] -- (5.5, 0)
+    [rounded corners=8pt] -- (6.5, 2) [sharp corners] -- (7.5, 0)
+    -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+\end{tikzpicture}
+
+
+\newpage
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_3_r.png}
+  }%
+}%
+
+\chapter{当日のイベントの模様}
+\label{sec:introduction}
+\thispagestyle{fancy}
+
+５月の ZAF はゲスト３名お迎えしました。
+
+ZAM 本号の内容はこの ZAF の内容をベースにして、
+以下のような構成になっています。
+\begin{itemize}
+\item \textgt{\bfseries \sffamily
+  【第 \ref{ch:furukawa} 章】 アイリス VS ペンギン (furukawa)}\\
+  当日しゃべった前座の話題「ZAM創刊号、印刷版きました！」を紹介します。
+\item \textgt{\bfseries \sffamily
+  【第 \ref{ch:ishikawa} 章】 Kaggle 奮闘記（石川達也）}\\
+  突然思いついて新シリーズをスタートさせました。（つづくのかな？）
+\item \textgt{\bfseries \sffamily
+  【第 \ref{ch:yoneda} 章】 ZENKEI AI FORUMへの提言（米田稔）}\\
+  米田さんの発表。
+\end{itemize}
+
+
+\newpage
+
+\titleformat{\chapter}[block]
+{} % style
+{} % label
+{0pt} % spacing
+{} % in front of the title
+[]
+\chapter[アイリス VS ペンギン (furukawa)]{}
+\label{ch:furukawa}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[RE]{第２章　アイリス VS ペンギン}
+\fancyfoot[LO]{furukawa}
+\fancyfoot[LE,RO]{\thepage}
+
+\thispagestyle{fancy}
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210620_iris_vs_penguins-nup1x2-p1-90percent.png}
+  }%
+}%
+
+%\includepdf[pages=2-10, pagecommand={}]%
+\includepdf[scale=0.9, pages=3-, nup=1x2, pagecommand={}]%
+  {20210620_iris_vs_penguins.pdf}
+
+\newpage
+
+\titleformat{\chapter}[block]
+{} % style
+{} % label
+{0pt} % spacing
+{} % in front of the title
+[]
+\chapter[Kaggle 奮闘記（石川達也）]{}
+\label{ch:ishikawa}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[RE]{第３章 Kaggle 奮闘記}
+\fancyfoot[LO]{石川達也}
+\fancyfoot[LE,RO]{\thepage}
+
+\thispagestyle{fancy}
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight,page=1]%
+      {20210627_Kaggel奮闘記.pdf}
+  }%
+}%
+
+%\includepdf[pages=2-10, pagecommand={}]%
+%\includepdf[scale=0.9, pages=1-, pagecommand={}]%
+\includepdf[pages=2-, pagecommand={}]%
+  {20210627_Kaggel奮闘記.pdf}
+
+\newpage
+
+\titleformat{\chapter}[block]
+{} % style
+{} % label
+{0pt} % spacing
+{} % in front of the title
+[]
+\chapter[ZENKEI AI FORUMへの提言（米田稔）]{}
+\label{ch:yoneda}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[RE]{第４章 ZENKEI AI FORUMへの提言}
+\fancyfoot[LO]{米田稔}
+\fancyfoot[LE,RO]{\thepage}
+
+\thispagestyle{fancy}
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/ZAM2021SumMY-p1-90percent.png}
+  }%
+}%
+
+\includepdf[scale=0.9, pages=2-, pagecommand={}]%
+  {ZAM2021SumMY.pdf}
+
+\newpage
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_3_r.png}
+  }%
+}%
+
+　% 全角空白
+
+\newpage
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_3_r.png}
+  }%
+}%
+
+\titleformat{\chapter}[block]
+{\gtfamily \Huge} % style
+{} % label
+{0pt} % spacing
+{} % in front of the title
+[]
+\chapter*{執筆者紹介}
+\addcontentsline{toc}{chapter}{執筆者紹介}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[RE]{執筆者紹介}
+\fancyfoot[LO]{\rightmark}
+\fancyfoot[LE,RO]{\thepage}
+
+\thispagestyle{fancy}
+
+{\small
+ZAM 2021年5月号の執筆者紹介です。
+
+\subsection*{第 \ref{ch:furukawa} 章\\ furukawa}
+
+furukawa
+
+furukawa
+
+furukawa
+
+\begin{tikzpicture}[remember picture, overlay]
+  %\node[xshift=-0.5cm,yshift=1.5cm] at (current page.east){
+  \node[xshift=0.0cm,yshift=1.5cm] at (current page.east){
+    \includegraphics[width=0.15\textwidth]%
+      {images/portrait0711-300x400.jpeg}
+  };
+  %\node[xshift=0.5cm,yshift=1.5cm] at (current page.west){
+  \node[xshift=0.0cm,yshift=1.5cm] at (current page.west){
+    \includegraphics[width=0.15\textwidth]%
+      {images/portrait0711-300x400.jpeg}
+  };
+  %\node[xshift=-0.5cm,yshift=-4.0cm] at (current page.east){
+  \node[xshift=0.0cm,yshift=-4.0cm] at (current page.east){
+    \includegraphics[width=0.15\textwidth]%
+      %{images/INORI_1.jpg}
+      {images/INORI_1.png}
+  };
+  %\node[xshift=0.5cm,yshift=-4.0cm] at (current page.west){
+  \node[xshift=0.0cm,yshift=-4.0cm] at (current page.west){
+    \includegraphics[width=0.15\textwidth]%
+      %{images/INORI_1.jpg}
+      {images/INORI_1.png}
+  };
+  %\node[xshift=-0.5cm,yshift=-8.0cm] at (current page.east){
+  \node[xshift=0.0cm,yshift=-8.0cm] at (current page.east){
+    \includegraphics[width=0.15\textwidth]%
+      {images/oshima_p_mask.jpg}
+  };
+  %\node[xshift=0.5cm,yshift=-8.0cm] at (current page.west){
+  \node[xshift=0.0cm,yshift=-8.0cm] at (current page.west){
+    \includegraphics[width=0.15\textwidth]%
+      {images/oshima_p_mask.jpg}
+  };
+\end{tikzpicture}
+
+\subsection*{第 \ref{ch:ishikawa} 章\\ \ruby{石川}{いしかわ}\ruby{達也}{たつや}（肩書）}
+
+石川達也
+
+石川達也
+
+石川達也
+
+　% 全角スペース
+
+　% 全角スペース
+
+
+\subsection*{第 \ref{ch:yoneda} 章\\ \ruby{米田}{よねだ}\ruby{稔}{みのる}（）}
+
+米田稔
+
+株式会社 COM-ONE 代表取締役社長。
+
+ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
+
+ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
+}
+\begin{tikzpicture}[
+  remember picture, overlay]
+\node[yshift=-8em,yscale=1.2,xslant=0.25,color=Gray] (text)
+  at (current page.north){%
+  \sffamily \large
+  【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
+\end{tikzpicture}
+
+\newpage
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_3_r.png}
+  }%
+}%
+
+\chapter*{編集後記}
+\addcontentsline{toc}{chapter}{編集後記}
+
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt} % 罫線無し
+\fancyfoot[RE]{\leftmark}
+\fancyfoot[LO]{編集後記}
+\fancyfoot[LE,RO]{\thepage}
+
+\thispagestyle{fancy}
+
+今月号（２０２１年５月号）です。
+
+今月号（２０２１年５月号）です。
+
+今月号（２０２１年５月号）です。
+
+今月号（２０２１年５月号）です。
+
+結果、５月のイベントの直前になってしまいましたが、
+なんとか発行にこぎ着けました。
+
+\vspace{1em}
+
+噂では７月には『技術書典１１』の開催が決定し、
+弊サークル『ZENKEI AI FORUM』も出典予定です。
+目玉は ZAM の有料版である『ZAM 季報』の創刊です。
+予定では『月刊 ZAM』の１月号から６月号までの内容をベースに、
+その他サークルメンバーによる書き下ろしコンテンツを加えて、
+魅力ある雑誌にしたいと考えています。
+みなさま是非ご参加ください！
+
+\begin{flushright}
+  （市來健吾）
+\end{flushright}
+
+% rainbow
+\begin{tikzpicture}[remember picture, overlay,
+    xscale=1.5, yscale=1.5, xshift=-2.5cm, yshift=-5cm]
+  \begin{scope}[thick, rounded corners=8pt,color=red]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=orange,
+      xshift=0.04cm,yshift=-0.1cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=yellow,
+      xshift=0.08cm,yshift=-0.2cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=green,
+      xshift=0.12cm,yshift=-0.3cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=blue,
+      xshift=0.16cm,yshift=-0.4cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=BlueViolet,
+      xshift=0.2cm,yshift=-0.5cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+  \begin{scope}[thick, rounded corners=8pt,color=violet,
+      xshift=0.24cm,yshift=-0.6cm]
+  \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
+  \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
+  \draw (7.5, 0) -- (8.5, 0);
+  \draw (3.5, 0.8) -- (7.5, 0.8)
+    -- (8.2, 2) -- (9.2, 0) -- (10.2, 2) -- (10.2, 0) -- (14, 0);
+  \end{scope}
+
+\end{tikzpicture}
+
+\begin{tikzpicture}[
+  remember picture, overlay]
+\node[yshift=-8em,yscale=1.2,xslant=0.25,color=Gray] (text)
+  at (current page.north){%
+  \sffamily \large
+  【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
+\end{tikzpicture}
+
+　% 全角スペース
+% 奥付ページ
+% cf. https://yamaimo.hatenablog.jp/entry/2019/09/23/200000
+\clearpage
+\pagestyle{fancy}
+\fancyhf{} % 既定設定をリセット
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+\makeatletter
+    \ifodd\c@page
+        \hbox{}\newpage\thispagestyle{fancy}
+    \fi
+\makeatother
+
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_4_l.png}
+  }%
+}%
+\vspace*{\fill}
+
+% 奥付
+\begin{flushleft}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}}
+    \textbf{\LARGE 月刊 ZENKEI AI MAGAZINE}\\
+    \textbf{\Large ２０２１年５月号}\\
+    \bhline{1pt}
+    \begin{tabular}{@{}r@{年\kern.5zw}r@{月\kern.5zw}r@{日\kern1.5zw}ll}
+      2021 & 6 & 30 & 初版発行 & （オンライン）\\
+      %2021 & 5 & 26 & 改訂版発行 & （第１刷）\\
+    \end{tabular} \\
+    \\
+    \begin{tabular}{@{}l@{\kern.5zw\textbf{:}\kern1zw}l}
+      \textbf{編　集} & ZAM 編集部\\
+      \textbf{発行者} & 市來健吾\\
+      \textbf{発行所} & ZENKEI AI FORUM\\
+      \textbf{連絡先} & \url{https://forum.ai.zenkei.com/} \\
+      \textbf{表　紙} & furukawa \\
+      %\textbf{印刷所} & ちょ古っ都製本工房 \url{https://www.chokotto.jp/} \\
+    \end{tabular} \\
+    \bhline{1pt}
+    \texttt{%
+      \textcopyright\quad
+      ZENKEI AI FORUM\quad
+      2021,\quad
+      Printed in Japan
+    }
+  \end{tabular*}
+\end{flushleft}
+
+\newpage
+
+\thispagestyle{empty}
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]%
+      {images/20210624_4_r.png}
+  }%
+}%
+
+　% 全角空白
+
+\end{document}
