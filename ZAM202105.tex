@@ -91,19 +91,13 @@
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_2_l.png}
+      {images/20210628_2_l_TOC.jpg}
   }%
 }%
 
-\tableofcontents
+%\tableofcontents
 \thispagestyle{empty}
-
-\begin{tikzpicture}[remember picture,overlay]
-\node[yshift=-9em,yscale=1.2,xslant=0.25,color=Gray] (text)
-  at (current page.north){%
-  \sffamily \large
-  【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
-\end{tikzpicture}
+　% 全角空白
 
 \newpage
 
@@ -112,7 +106,7 @@
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_2_r.png}
+      {images/20210628_2_r.jpg}
   }%
 }%
 
@@ -123,7 +117,7 @@
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_3_l.png}
+      {images/20210628_3_l.jpg}
   }%
 }%
 
@@ -138,16 +132,14 @@
   【月刊 ZENKEI AI MAGAZINE ２０２１年５月号】};
 \end{tikzpicture}
 
-早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
-この２０２１年５月号で５冊目になります。
+月刊 ZENKEI AI MAGAZINE (ZAM) の５月号です。
+今年の２０２１年１月にスタートしてから本号で４冊目になります。
+はい、実はまだ４月号が完成していません
+（ZENKEI AI FORUM ４月の回は市來の一人喋りになったため、
+  執筆者が私だけなので、発行が遅れて悲しいのも私だけ）。
+ということで、予定通り刊行される『月刊 ZAM ５月号』です。
+お楽しみください！
 
-早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
-この２０２１年５月号で５冊目になります。
-
-早いもので、２０２１年１月からスタートした ZENKEI AI MAGAZINE (ZAM) も
-この２０２１年５月号で５冊目になります。
-
-お楽しみください。
 
 \begin{flushright}
   2021年6月30日\\
@@ -174,7 +166,7 @@
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_3_r.png}
+      {images/20210628_3_r.jpg}
   }%
 }%
 
@@ -182,20 +174,25 @@
 \label{sec:introduction}
 \thispagestyle{fancy}
 
-５月の ZAF はゲスト３名お迎えしました。
-
-ZAM 本号の内容はこの ZAF の内容をベースにして、
-以下のような構成になっています。
+５月の ZENKEI AI FORUM (ZAF)  は２０２１年５月２６日に開催されました。
+当日の模様は YouTube のアーカイブ (\url{https://youtu.be/GwbYxcMWa7w})
+でご覧になれますので、見逃した方はそちらでご覧ください。
+この日はゲスト３名お迎えしました。
+ZAM 本号の内容はこの ZAF をベースにして、
+以下のような構成になります。
 \begin{itemize}
 \item \textgt{\bfseries \sffamily
   【第 \ref{ch:furukawa} 章】 アイリス VS ペンギン (furukawa)}\\
-  当日しゃべった前座の話題「ZAM創刊号、印刷版きました！」を紹介します。
+  『ゼロからはじめるＡＩ』シリーズの furukawa さんに、
+  機械学習で使われるデータセットの最近のはなしを紹介していただきます。
 \item \textgt{\bfseries \sffamily
   【第 \ref{ch:ishikawa} 章】 Kaggle 奮闘記（石川達也）}\\
-  突然思いついて新シリーズをスタートさせました。（つづくのかな？）
+  全景株式会社で AI モデルなど開発している石川さんに、
+  先日挑戦して結構いいところまで行ったという Kaggle のはなしです。
 \item \textgt{\bfseries \sffamily
   【第 \ref{ch:yoneda} 章】 ZENKEI AI FORUMへの提言（米田稔）}\\
-  米田さんの発表。
+  前回４月の ZAF でいただいたコメントを発端に
+  「社会に役に立つ ZENKEI AI FORUM」という視点でおはなしをしていただきます。
 \end{itemize}
 
 
@@ -289,7 +286,12 @@ ZAM 本号の内容はこの ZAF の内容をベースにして、
   }%
 }%
 
-\includepdf[scale=0.9, pages=2-, pagecommand={}]%
+\includepdf[scale=0.9, pagecommand={}]%
+  {ZAM2021SumMY_P2.pdf}
+
+\newpage
+
+\includepdf[scale=0.9, pages=3-, pagecommand={}]%
   {ZAM2021SumMY.pdf}
 
 \newpage
@@ -297,7 +299,7 @@ ZAM 本号の内容はこの ZAF の内容をベースにして、
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_3_r.png}
+      {images/20210628_3_r.jpg}
   }%
 }%
 
@@ -308,7 +310,7 @@ ZAM 本号の内容はこの ZAF の内容をベースにして、
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_3_r.png}
+      {images/20210628_3_r.jpg}
   }%
 }%
 
@@ -331,73 +333,56 @@ ZAM 本号の内容はこの ZAF の内容をベースにして、
 \thispagestyle{fancy}
 
 {\small
-ZAM 2021年5月号の執筆者紹介です。
+今月の執筆者紹介です。
 
-\subsection*{第 \ref{ch:furukawa} 章\\ furukawa}
+\subsection*{第 \ref{sec:introduction} 章\\ \ruby{市來}{いちき}\ruby{健吾}{けんご} （ZAM 編集長）}
 
-furukawa
+自分とみんなの人生が楽しくなるかなと思って、
+勝手に雑誌を作って、勝手に編集長をやっています。
 
-furukawa
-
-furukawa
+結局いつも自分の原稿が一番遅いですね。
 
 \begin{tikzpicture}[remember picture, overlay]
-  %\node[xshift=-0.5cm,yshift=1.5cm] at (current page.east){
-  \node[xshift=0.0cm,yshift=1.5cm] at (current page.east){
-    \includegraphics[width=0.15\textwidth]%
-      {images/portrait0711-300x400.jpeg}
+  %\node[xshift=1.0cm,yshift=1.3cm] at (current page.west){
+  \node[xshift=-0.9cm,yshift=1.3cm] at (current page.east){
+    \includegraphics[width=0.12\textwidth]%
+      {images/editor-in-chief.png}
   };
-  %\node[xshift=0.5cm,yshift=1.5cm] at (current page.west){
-  \node[xshift=0.0cm,yshift=1.5cm] at (current page.west){
-    \includegraphics[width=0.15\textwidth]%
-      {images/portrait0711-300x400.jpeg}
+  %\node[xshift=1.0cm,yshift=-2.0cm] at (current page.west){
+  \node[xshift=-0.9cm,yshift=-2.0cm] at (current page.east){
+    \includegraphics[width=0.12\textwidth]%
+      {images/aiforum_20210628_1.jpg}
   };
-  %\node[xshift=-0.5cm,yshift=-4.0cm] at (current page.east){
-  \node[xshift=0.0cm,yshift=-4.0cm] at (current page.east){
-    \includegraphics[width=0.15\textwidth]%
-      %{images/INORI_1.jpg}
-      {images/INORI_1.png}
+  %\node[xshift=1.0cm,yshift=-5.0cm] at (current page.west){
+  \node[xshift=-0.9cm,yshift=-5.0cm] at (current page.east){
+    \includegraphics[width=0.12\textwidth]%
+      {images/ishikawa.png}
   };
-  %\node[xshift=0.5cm,yshift=-4.0cm] at (current page.west){
-  \node[xshift=0.0cm,yshift=-4.0cm] at (current page.west){
-    \includegraphics[width=0.15\textwidth]%
-      %{images/INORI_1.jpg}
-      {images/INORI_1.png}
-  };
-  %\node[xshift=-0.5cm,yshift=-8.0cm] at (current page.east){
-  \node[xshift=0.0cm,yshift=-8.0cm] at (current page.east){
-    \includegraphics[width=0.15\textwidth]%
-      {images/oshima_p_mask.jpg}
-  };
-  %\node[xshift=0.5cm,yshift=-8.0cm] at (current page.west){
-  \node[xshift=0.0cm,yshift=-8.0cm] at (current page.west){
-    \includegraphics[width=0.15\textwidth]%
-      {images/oshima_p_mask.jpg}
+  %\node[xshift=1.0cm,yshift=-8.8cm] at (current page.west){
+  \node[xshift=-0.9cm,yshift=-8.8cm] at (current page.east){
+    \includegraphics[width=0.12\textwidth]%
+      {images/ProfPhotoS_edit2.jpg}
   };
 \end{tikzpicture}
 
-\subsection*{第 \ref{ch:ishikawa} 章\\ \ruby{石川}{いしかわ}\ruby{達也}{たつや}（肩書）}
+\subsection*{第 \ref{ch:furukawa} 章\\ furukawa （全景株式会社）}
 
-石川達也
+職業：エンジニア、趣味：お絵描き
 
-石川達也
+かわいいものが好きです。
 
-石川達也
+\subsection*{第 \ref{ch:ishikawa} 章\\ \ruby{石川}{いしかわ}\ruby{達也}{たつや}（全景株式会社）}
 
-　% 全角スペース
+1991年生まれ、愛知県出身。金沢大学大学院自然科学研究科数物科学専攻（旧 物理学部）修士課程終了。
+愛知で自動車の組み込み系の開発に従事し、なんだかんだあってで金沢に戻って来ました。
+現在は全景株式会社でプログラマをしています。AIは勉強し始めて1年くらい。
 
-　% 全角スペース
 
+\subsection*{第 \ref{ch:yoneda} 章\\ \ruby{米田}{よねだ}\ruby{稔}{みのる}（株式会社COM-ONE 代表取締役社長）}
 
-\subsection*{第 \ref{ch:yoneda} 章\\ \ruby{米田}{よねだ}\ruby{稔}{みのる}（）}
-
-米田稔
-
-株式会社 COM-ONE 代表取締役社長。
-
-ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
-
-ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
+石川高専卒後コマツソフト、コマツパキスタンソフト(イスラマバード)勤務を経て、
+2003年に株式会社COM-ONEを設立し現在に至る。
+ZENKEI AI FORUM の前身であるZENKEI AI SEMINAR からのメンバー。
 }
 \begin{tikzpicture}[
   remember picture, overlay]
@@ -412,7 +397,7 @@ ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_3_r.png}
+      {images/20210628_3_r.jpg}
   }%
 }%
 
@@ -428,26 +413,32 @@ ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
 
 \thispagestyle{fancy}
 
-今月号（２０２１年５月号）です。
+今月号（２０２１年５月号）の刊行は、予定通り、
+ZENKEI AI FORUM ６月のイベントの日（２０２１年６月３０日開催予定）に間に合いました。
 
-今月号（２０２１年５月号）です。
+と言っても（まえがきに書いた通り）実は１つ前の『月刊 ZAM ４月号』がまだ出来上がってません。
+（これからがんばります。）
 
-今月号（２０２１年５月号）です。
-
-今月号（２０２１年５月号）です。
-
-結果、５月のイベントの直前になってしまいましたが、
-なんとか発行にこぎ着けました。
+いつものことですが、執筆者の３名のみなさまには、
+きちんと原稿をいただきました。ありがとうございました。
+いろいろな人の書いたものが１冊の本になるのが、やっぱり雑誌の醍醐味ですね。
 
 \vspace{1em}
 
-噂では７月には『技術書典１１』の開催が決定し、
-弊サークル『ZENKEI AI FORUM』も出典予定です。
-目玉は ZAM の有料版である『ZAM 季報』の創刊です。
+ところで来月の７月は ZENKEI AI FORUM もサークルとして過去２回参加した
+技術同人誌イベント『技術書典１１』が開催されます。
+私たちも今回も引き続き出典予定です。
+既刊の単行本（furukawa さんの『\href{https://techbookfest.org/product/6566174659706880}{ゼロからはじめるAI}』や中野裕さんの『\href{https://techbookfest.org/product/5840767786418176}{Jupyter BookでAIの解説本を書く方法}』ほか）に加え、目玉は ZAM の有料版である『ZAM 季報』の創刊です。
 予定では『月刊 ZAM』の１月号から６月号までの内容をベースに、
-その他サークルメンバーによる書き下ろしコンテンツを加えて、
+サークルメンバーによる書き下ろしコンテンツを加えて、
 魅力ある雑誌にしたいと考えています。
 みなさま是非ご参加ください！
+
+\vspace{1em}
+
+今月号の表紙デザインおよび口絵のイラストは、
+『月刊 ZAM ２月号』でも表紙デザインしてもらった furukawa さんです。
+
 
 \begin{flushright}
   （市來健吾）
@@ -455,7 +446,8 @@ ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
 
 % rainbow
 \begin{tikzpicture}[remember picture, overlay,
-    xscale=1.5, yscale=1.5, xshift=-2.5cm, yshift=-5cm]
+    %xscale=1.5, yscale=1.5, xshift=-2.5cm, yshift=-5cm]
+    xscale=1.5, yscale=1.5, xshift=-2.5cm, yshift=-2cm]
   \begin{scope}[thick, rounded corners=8pt,color=red]
   \draw (0, 2) -- (5, 2) -- (4, 0) -- (5.5, 0);
   \draw (5.5, 0) -- (6.5, 2) -- (7.5, 0);
@@ -546,7 +538,7 @@ ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_4_l.png}
+      {images/20210628_4_l.jpg}
   }%
 }%
 \vspace*{\fill}
@@ -586,7 +578,7 @@ ZENKEI AI FORUM の前身である ZENKEI AI SEMINAR からのメンバー。
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \includegraphics[width=\paperwidth,height=\paperheight]%
-      {images/20210624_4_r.png}
+      {images/20210628_4_r.jpg}
   }%
 }%
 
